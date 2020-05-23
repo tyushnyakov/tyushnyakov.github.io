@@ -1,0 +1,2 @@
+[2020-2-29 18:42:47] layer "+8801743331996 +8801928737807": Expected Either a default asset specification or a layer asset specification but "+" found.
+[2020-2-29 18:42:47] layer "quickmasud@gmail.com quickmasud@yahoo.com": Unsupported extension: com
