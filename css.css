@@ -1,0 +1,62 @@
+html {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+}
+body {
+    background-image: url(mountains.png);
+    background-size: 100%;
+    background-repeat: repeat-y
+    margin: 0 auto;
+}
+.mid {
+    margin: 0 auto;
+}
+main {
+    display: flex;
+}
+article {
+    width: 80%;
+}
+h1 {
+    color: red;
+    font-family: fantasy;
+    text-shadow: 1px 1px 1px black,
+             2px 2px 1px black;
+  }
+ul {
+    text-align: left;
+}
+p, li {
+    color: green;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+a:hover {
+    text-decoration: none;
+}
+header {
+    background-color: blue;
+}
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border:1px solid blueviolet;
+    bottom: 0;
+}
+h3 {
+    text-decoration: underline overline;
+}
+address {
+    display: flex;  
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.phone {
+    padding-left: 10px;
+}
+.stopwatch {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}

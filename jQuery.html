@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+</head>
+<body>
+    <div data-role="page">
+ 
+        <div data-role="header">
+            <h1>My Title</h1>
+        </div><!-- /header -->
+        
+        <div role="main" class="ui-content">
+            <p>Hello world</p>
+            <div class="ex">
+                <a class="hide" href="http://jquery.com/">jQuery</a>
+                <div class="slide">Slide up and slide down</div>
+                <div class="fade">Fade out and fade in</div>
+                <h1>HIDE, DELAY AND SHOW</h1>
+                <div class="funtimes">ANIMATE</div>             
+            </div>
+            <ul data-role="listview" data-inset="true" data-filter="true" data-theme="b">
+                <li><a href="#">Acura</a></li>
+                <li><a href="#">Audi</a></li>
+                <li><a href="#">BMW</a></li>
+                <li><a href="#">Cadillac</a></li>
+                <li><a href="#">Ferrari</a></li>
+            </ul>
+            <form>
+                <label for="slider-0">Input slider:</label>
+                <input type="range" name="slider" id="slider-0" value="25" min="0" max="100" />
+            </form>
+            <a href="#" data-role="button" data-icon="star" data-theme="b">Star button</a>
+            <a href="#" data-role="button" data-icon="star" data-theme="b">Button</a>
+        </div><!-- /content -->
+ 
+        <div data-role="footer">
+            <h4>My Footer</h4>
+        </div><!-- /footer -->
+ 
+    </div><!-- /page -->
+    <script src="jquery-3.5.0.js"></script>
+    <script>
+ 
+    // Your code goes here.
+    $( document ).ready(function() {
+ 
+        $( "a.hide" ).click(function( event ) {
+            alert( "As you can see, the link no longer took you to jquery.com" );
+        event.preventDefault();
+        });
+        $( "a.hide" ).addClass( "test" );
+        $( "a.hide" ).removeClass( "test" );
+        $( "a.hide" ).click(function( event ) {
+            event.preventDefault();
+            $( this ).hide( "slow" );
+        });
+
+        $('div.slide').slideUp( 800 );
+        $('div.slide').slideDown( 600 ); 
+
+        $('div.fade').fadeOut( 1500 );   
+        $( "div.fade" ).fadeIn( 600 );        
+
+        $( "div" ).toggle( 1800 );
+        $( "div" ).toggle( 1800 );
+
+        
+        $( "h1" ).hide( 500 ).delay( 1500 ).show( 300 );
+
+        $( "div.funtimes" ).animate(
+            {
+                left: "+=50",
+                opacity: 0.25
+            }, 300,
+                function() {
+                console.log( "done!" );
+            }
+        );
+
+        $( "div.funtimes" ).animate({
+            left: [ "+=50", "swing" ],
+            opacity: [ 0.25, "linear" ]
+        }, 300 );
+    })
+        
+    </script>
+</body>
+</html>
