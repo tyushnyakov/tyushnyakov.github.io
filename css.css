@@ -5,8 +5,8 @@ html {
 }
 body {
     background-image: url(mountains.png);
-    background-size: 100%;
-    background-repeat: repeat-y
+    background-size: cover;
+    background-attachment: fixed;
     margin: 0 auto;
 }
 .mid {
