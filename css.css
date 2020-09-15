@@ -9,6 +9,9 @@ body {
     background-attachment: fixed;
     margin: 0 auto;
 }
+main {
+        display: block;
+}    
 .mid {
     margin: 0 auto;
 }
